@@ -1,0 +1,1 @@
+dotnet run -f net8.0-android --property:AndroidSdkDirectory=$env:Android_Home
