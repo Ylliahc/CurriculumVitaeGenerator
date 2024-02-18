@@ -1,1 +1,1 @@
-dotnet run -f net8.0-android --property:AndroidSdkDirectory=$env:Android_Home
+dotnet run -f net8.0-android --property:AndroidSdkDirectory=C:\Users\Yllia\AppData\Local\Android\Sdk

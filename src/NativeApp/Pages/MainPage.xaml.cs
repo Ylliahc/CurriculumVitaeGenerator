@@ -1,5 +1,4 @@
-﻿namespace CurriculumVitaeGenerator.NativeApp;
-
+﻿namespace CurriculumVitaeGenerator.NativeApp.Pages;
 public partial class MainPage : ContentPage
 {
 	int count = 0;
@@ -19,6 +18,11 @@ public partial class MainPage : ContentPage
 			CounterBtn.Text = $"Clicked {count} times";
 
 		SemanticScreenReader.Announce(CounterBtn.Text);
+	}
+
+	private async void OnInformationTabbedBtnClicked(object sender, EventArgs e)
+	{
+		await Navigation.PushAsync(new InformationTabbedPage());
 	}
 }
 

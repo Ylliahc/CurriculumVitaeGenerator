@@ -6,10 +6,15 @@
     xmlns:local="clr-namespace:CurriculumVitaeGenerator.NativeApp"
     Shell.FlyoutBehavior="Disabled"
     Title="CurriculumVitaeGenerator.NativeApp">
+    <TabBar>
+        <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate local:Pages.MainPage}"
+            Route="Pages.MainPage" />
+        <ShellContent Title="Administratif"
+            ContentTemplate="{DataTemplate local:Pages.AdministrativeInformationPage}"
+            Route="Pages.AdministrativeInformationPage"/>
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    </TabBar>
 
 </Shell>
